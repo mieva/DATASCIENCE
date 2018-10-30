@@ -1,0 +1,2 @@
+q -d "," -H -O "select customer_id,datestamp,count(distinct item_id) ips,sum(clicked) cps,sum(purchased) pps,sum(
+paidamount) rps from customer-interactions.csv group by customer_id,datestamp" > sessions.csv
